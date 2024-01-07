@@ -25,6 +25,7 @@ const HomePage = () => {
         {data.map(d => (
           <div key={d.id}>{d.title}</div>
         ))}
+        <h1>뺑글뺑글</h1>
       </h3>
     </div>
   );
