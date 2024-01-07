@@ -4,3 +4,4 @@ vite.config.js
 /package-lock.json
 .vercel
 .env
+package-lock.json
