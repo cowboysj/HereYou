@@ -1,7 +1,28 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Header = styled.div`
-  color: red;
+import { FONT_SIZE } from '@/constants/size';
+import theme from '@/theme';
+
+const FooterWrapper = styled.div`
+  width: 100%;
+  height: 80px;
+  background-color: ${theme.COLOR.MAIN.WHITE};
+  color: ${theme.COLOR.MAIN.BLACK};
+
+  ${theme.ALIGN.ROW_CENTER};
+  justify-content: space-between;
+  padding: 0 30px;
 `;
 
-export { Header };
+const Image = styled.img`
+  height: 46px;
+`;
+
+const LinkTo = styled(Link)`
+  ${theme.ALIGN.COLUMN_CENTER}
+  text-decoration: none;
+  color: black;
+`;
+
+export { FooterWrapper, Image, LinkTo };
